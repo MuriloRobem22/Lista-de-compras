@@ -1,0 +1,132 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Krona+One&family=Montserrat&display=swap');
+
+
+*{padding: 0;
+  margin: 0;
+  text-decoration: none;}
+
+body{
+  
+  font-family: 'Krona One', sans-serif;
+  background-color: #E63946;
+  color:  #F1FAEE;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 7%;
+}
+
+section{
+  width: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+gap: 2rem;
+}
+
+.perguntas{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: .5rem
+}
+.perguntas {
+  display: flex;
+  text-align: end;
+}
+.perguntas select{
+  margin-left: -1%;
+}
+.perguntas #additem{
+  border-radius: .8rem 0 0 .8rem;
+  border: transparent;
+  color: #1D3557;
+  padding-left: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+.compra{
+  display: flex;
+  flex-direction: column;
+  line-height: 180%;
+  background-color: #F1FAEE;
+  color: #1D3557;
+  border-radius: 2rem;
+  box-shadow: 0 0px 6px #F1FAEE;
+  
+  box-sizing: content-box;
+  transition: all .3s;
+  gap: 0rem;
+}
+
+.compraadd{
+  padding: 2rem 2rem;
+}
+
+table, th, td{
+  border: 1px solid #F1FAEE;
+  background-color: #1D3557;
+  border-radius: .5rem;
+}
+
+th{
+  background-color: #1D3557;
+  color: #F1FAEE;
+  padding: .7rem;
+}
+
+td{
+  padding: .8rem;
+  background-color: #F1FAEE;
+}
+
+select{
+  border-radius:  0 .8rem .8rem 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: #1D3557;
+  height: 3rem;
+}
+
+.quantidade{
+  width: 1.5rem;
+  margin-left: -0.79%;
+}
+
+#registro{
+  background-color: #1D3557;
+  color: #F1FAEE;
+  padding: 0% 2%;
+  border-radius: 1rem;
+  transition: all .3s;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  border: 3px solid #E63946;
+}
+
+#registro:hover{
+  background-color: #F1FAEE;
+  color: #E63946;
+  border: 3px solid #1D3557;
+}
+#apagar{
+  background-color: #1D3557;
+  color: #F1FAEE;
+  padding: 0% 2%;
+  border-radius: 1rem;
+  transition: all .3s;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  border: 3px solid #E63946;
+}
+
+#apagar:hover{
+  background-color: #F1FAEE;
+  color: #E63946;
+  border: 3px solid #1D3557;
+}
