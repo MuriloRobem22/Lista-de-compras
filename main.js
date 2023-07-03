@@ -4,7 +4,7 @@ let congelados = []
 let laticinios = []
 let frutas = []
 let produtos = []
-let _apagado
+
 //nome do item e a categoria dele
 let item = document.querySelector('#additem')
 let categoria = document.querySelector('#lista')
@@ -13,37 +13,12 @@ let _compraClasse = document.querySelector('.compra')
 //
 let _registro = document.querySelector('#registro')
 let _apagar = document.querySelector('#apagar')
+let apagarItem = document.querySelector('#apagarItem')
 let quantidade = document.querySelector('#quantidade')
+let _apagado
+let x
 
-function envio(categoria, item, _compra) {
-  if (categoria === 'graos') {
-    graos.push(quantidade.value + ' - ' + item)
-
-    console.log(`tabela graos: ${graos.join(', ')}`)
-  }
-  if (categoria === 'congelados') {
-    congelados.push(quantidade.value + ' - ' + item)
-
-    console.log(`tabela congelados: ${congelados}`)
-  }
-  if (categoria === 'frutas') {
-    frutas.push(quantidade.value + ' - ' + item)
-
-    console.log(`tabela frutas: ${frutas}`)
-  }
-  if (categoria === 'laticinios') {
-    laticinios.push(quantidade.value + ' - ' + item)
-
-    console.log(`tabela laticinios: ${laticinios}`)
-  }
-  if (categoria === 'produtos') {
-    produtos.push(quantidade.value + ' - ' + item)
-  }
-  if (item === '' && categoria === 'escolha') {
-    item.pop()
-    alert(`Nenhum produto foi reconhecido!!`)
-  }
-
+function construtorTable(_compra) {
   _compra = String(`<h4> Esta é a sua lista de compras organizada: </h4>
   
   <table style='width: 100%'>
@@ -74,35 +49,76 @@ function envio(categoria, item, _compra) {
   item.value = ''
 }
 
+function envio(categoria, item, _compra) {
+  if (categoria === 'graos') {
+    graos.push(quantidade.value + ' - ' + item)
+
+    console.log(`tabela graos: ${graos.join(', ')}`)
+  }
+  if (categoria === 'congelados') {
+    congelados.push(quantidade.value + ' - ' + item)
+
+    console.log(`tabela congelados: ${congelados}`)
+  }
+  if (categoria === 'frutas') {
+    frutas.push(quantidade.value + ' - ' + item)
+
+    console.log(`tabela frutas: ${frutas}`)
+  }
+  if (categoria === 'laticinios') {
+    laticinios.push(quantidade.value + ' - ' + item)
+
+    console.log(`tabela laticinios: ${laticinios}`)
+  }
+  if (categoria === 'produtos') {
+    produtos.push(quantidade.value + ' - ' + item)
+  }
+  if (item === '' && categoria === 'escolha') {
+    item.pop()
+    alert(`Nenhum produto foi reconhecido!!`)
+  }
+}
+
 function AddClasse() {
   _compraClasse.classList.add('compraadd')
 }
 
-function apagar() {
-  if (categoria.value === 'produtos') {
-    _apagado = produtos.pop()
+function apagar(x) {
+  _apagado = apagarItem.value
+
+  let ig = graos.findIndex(item => item.includes(_apagado))
+  console.log(`${ig}`)
+  let ic = congelados.findIndex(item => item.includes(_apagado))
+  console.log(`${ic}`)
+  let fi = frutas.findIndex(item => item.includes(_apagado))
+  console.log(`${fi}`)
+  let il = laticinios.findIndex(item => item.includes(_apagado))
+  console.log(`${il}`)
+
+  if (ig !== -1) {
+    x = graos.splice(ig, 1)
   }
-  if (categoria.value === 'frutas') {
-    _apagado = frutas.pop()
+  if (ic !== -1) {
+    x = congelados.splice(ic, 1)
   }
-  if (categoria.value === 'congelados') {
-    _apagado = congelados.pop()
+  if (fi !== -1) {
+    x = frutas.splice(fi, 1)
   }
-  if (categoria.value === 'laticinios') {
-    _apagado = laticinios.pop()
+  if (il !== -1) {
+    x = laticinios.splice(il, 1)
   }
-  if (categoria.value === 'graos') {
-    _apagado = graos.pop()
-  }
+  alert(`'${x}' foi apagado`)
 }
 
 registro.onclick = function () {
-  envio(categoria.value, item.value, _compra)
+  envio(categoria.value, item.value)
+  construtorTable(_compra)
   AddClasse()
 }
 
 _apagar.onclick = function () {
-  apagar()
+  apagar(x)
   console.log(`${categoria.value}: item apagado: ${_apagado}`)
   alert(`Item:${_apagado}, foi apagado da categoria graos `)
+  construtorTable(_compra)
 }
