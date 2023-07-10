@@ -63,7 +63,7 @@ justify-content: center;
 align-items: center;
 margin-top: 3.5em;
 margin-bottom: 3%;
-height: 76vh;
+height: 87vh;
 }
 
 #perguntas{
@@ -215,14 +215,16 @@ hr{
 }
 
 footer{
-
   background-color: var(--cor-destaque);
   width: 100%;
-text-align: center;
-color: var(--cor-secundaria);
-  padding: 2% 0; 
+  text-align: center;
+  color: var(--cor-secundaria);
+  padding: 2% 0;
   margin-top: 3%;
-
+  display: flex;
+  align-content: flex-end;
+  align-items: center;
+  justify-content: center;
 }
 
 main{
@@ -257,6 +259,7 @@ section{
 }
 
 footer{
+  display: block;
 margin-top: -1.5%;
 }
 
