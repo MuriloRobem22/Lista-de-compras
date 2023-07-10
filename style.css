@@ -30,7 +30,7 @@ body{
 }
 
 .compra{
-  background-color: black;
+  background-color: var(--hover);
   display: flex;
   /* flex-direction: column; */
   flex-wrap: wrap;
