@@ -217,7 +217,7 @@ hr{
 footer{
 
   background-color: var(--cor-destaque);
-  width: 100vw;
+  width: 100%;
 text-align: center;
 color: var(--cor-secundaria);
   padding: 2% 0; 
@@ -254,6 +254,10 @@ main{
 
 section{
   width: 40%;
+}
+
+footer{
+margin-top: -1.5%;
 }
 
 }
