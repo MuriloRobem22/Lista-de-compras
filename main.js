@@ -59,17 +59,24 @@ function apagaItem() {
 
   if (ig !== -1) {
     x = graos.splice(ig, 1)
+    alert(`'${x}' foi apagado`)
   }
   if (ic !== -1) {
     x = congelados.splice(ic, 1)
+    alert(`'${x}' foi apagado`)
   }
   if (fi !== -1) {
     x = frutas.splice(fi, 1)
+    alert(`'${x}' foi apagado`)
   }
   if (il !== -1) {
     x = laticinios.splice(il, 1)
+    alert(`'${x}' foi apagado`)
   }
-  alert(`'${x}' foi apagado`)
+  if (ig === -1 && il === -1 && fi === -1 && ic === -1){
+    alert(`O item informado não existe!`)
+  }
+  
 }
 
 function tabela() {
