@@ -66,6 +66,8 @@ margin-bottom: 3%;
 flex-direction: column;
 gap: 1em;
 }
+
+
 #Item{
   display: flex;
   justify-content: stretch;
@@ -73,6 +75,13 @@ gap: 1em;
   font-size: 1.5em;
   
 }
+
+
+.labelItem{
+  margin-right: .5rem
+}
+
+
 #Item input{
 width: 25%;
 }
@@ -131,4 +140,63 @@ td{
 #botaoAdd:hover{
   background-color: var(--hover);
 
+}
+
+#apagar{
+  border-radius: 1rem;
+  background-color: #1d355700;
+  border: 2px solid var(--cor-destaque);
+  color: var(--cor-destaque);
+  font-family: var(--font-montserrat);
+  transition: all 0.5s;
+  padding: 3% 3%;
+}
+
+#apagar:hover{
+  background-color: var(--hover);
+}
+
+#itemInput{
+  background-color: #1d355700;
+  border: 1.5px solid var(--cor-destaque);
+  border-radius: 0 0 0 .5rem;
+  color: var(--cor-text-principal);
+ text-align: center;
+}
+
+#itemInput:focus{
+  background-color: var(--hover);
+  border-color: var(--cor-destaque);
+}
+
+#addQuant{
+  background-color: #1d355700;
+  border: 1.5px solid var(--cor-destaque);
+  color: var(--cor-text-principal);
+  text-align: center;
+}
+
+#lista{
+  background-color: #1d355700;
+  border: 1.5px solid var(--cor-destaque);
+  border-radius: 0 .5rem 0  0;
+  color: var(--cor-text-principal);
+  text-align: center;
+}
+ option{
+color: var(--cor-secundaria);
+}
+
+#apagarItem{
+  background-color: #1d355700;
+  border: 1.5px solid var(--cor-destaque);
+  border-radius: 0 .5rem 0  0.5rem;
+  color: var(--cor-text-principal);
+  text-align: center;
+  padding: .3rem;
+}
+
+hr{
+  height: 1px;
+  background-color: #1D3557;
 }
