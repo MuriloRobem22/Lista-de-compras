@@ -75,6 +75,7 @@ function apagaItem() {
 function tabela() {
   _compra = String(`<h4> Esta é a sua lista de compras organizada: </h4>
   
+  <div classe='divTabela'> 
   <table class='tabela' >
   <tr>
   <th>Grãos</th>
@@ -84,29 +85,39 @@ function tabela() {
   <th>Limpeza</th>
   </tr>
   <tr>
-  <td> ${graos.join('<br><br>')} </td>
+  <td> ${graos.join('<br><hr>')} </td>
   
-  <td> ${frutas.join('<br><br>')} </td>
+  <td> ${frutas.join('<br><hr>')} </td>
   
-  <td> ${laticinios.join('<br><br>')} </td>
+  <td> ${laticinios.join('<br><hr>')} </td>
   
-  <td> ${congelados.join('<br><br>')} </td>
+  <td> ${congelados.join('<br><hr>')} </td>
 
-  <td> ${produtos.join('<br><br>')} </td>
+  <td> ${produtos.join('<br><br><hr>')} </td>
   </tr>
   
   
-  </table>`)
+  </table>
+  
+  </div>`)
 
   document.querySelector('.compra').innerHTML = _compra
+}
+
+function classeCompraAdd() {
+
+  document.querySelector('.compra').classList.add('compraAdd')
+  
 }
 
 botaoApagar.addEventListener('click', () => {
   apagaItem()
   tabela()
+  classeCompraAdd()
 })
 
 botaoAdd.addEventListener('click', () => {
   itemAdd()
   tabela()
+  classeCompraAdd()
 })
