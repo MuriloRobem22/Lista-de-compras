@@ -48,6 +48,11 @@ function itemAdd() {
 function apagaItem() {
   itemApagado = inputApagarItem.value
 
+  if (!itemApagado) {
+    alert('Por favor, insira um item para apagar.');
+    return;
+  }
+
   let ig = graos.findIndex(item => item.includes(itemApagado))
   console.log(`${ig}`)
   let ic = congelados.findIndex(item => item.includes(itemApagado))
