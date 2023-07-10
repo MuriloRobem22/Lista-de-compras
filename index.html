@@ -1,45 +1,49 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>lista de compras</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-
   <body>
     <main>
       <section>
         <h1>Lista de compras</h1>
-
-        <div class="perguntas">
-         
-            <Label name="add-item"> Adicione algum item a sua lista de compras: </Label>
-            <input type="text" name="add-item" id="additem" />
-            <input type="number" name="" value="1" class="quantidade" id="quantidade">
+        <div id="perguntas">
+          <div id="Item">
+            <label for="">Item: </label>
+            <input type="text" name="" id="itemInput" placeholder="Digite o item"/>
+            <input type="number" name="" id="addQuant" placeholder="QNTD"  value="1"/>
             <select name="" id="lista">
-              <option value="Escolha">Escolha uma categoria</option>
+              <option value="Escolha">categoria</option>
               <option value="graos">Grãos</option>
               <option value="congelados">Congelados</value>
               <option value="laticinios">Laticinios</value>
               <option value="frutas">Frutas</value>
               <option value="produtos">Produtos de Limpeza</value>
             </select>
-
-            <button id="registro">Adicionar</button> 
-            
-          
+          </div>
+          <button id="botaoAdd">Adicionar</button> 
         </div>
-        <div class="compra"></div>
-          <label for="">Digite o item que deseja apagar:</label>
+
+        
+            <label for="">Digite o item que deseja apagar:</label>
           <input type="text" id="apagarItem">
           <button id="apagar">Apagar item</button>
+          
+       
+        
+          
+      </section>
+      <div class="compra"></div>
+ 
+    </main>
+     
+    
       </section>
     </main>
-  
-  <script src="main.js"></script>
-  <script  src="js.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.4.1/jspdf.debug.js" integrity="sha384-THVO/sM0mFD9h7dfSndI6TS0PgAGavwKvB5hAxRRvc0o9cPLohB0wb/PTA7LdUHs" crossorigin="anonymous"></script>
-  </body>
 
+    <script src="main.js"></script>
+  </body>
 </html>
