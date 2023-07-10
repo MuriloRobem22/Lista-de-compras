@@ -26,6 +26,7 @@ body{
   font-family: sans-serif, montserrat;
   background-color: var(--cor-secundaria);
   color: var(--cor-text-principal);
+  
 }
 
 .compra{
@@ -37,6 +38,7 @@ body{
   gap: 1rem;
   border-radius: 1rem;
   color: var(--cor-text-principal);
+  margin-top: 5rem;
 }
 
 .compra h4{
@@ -199,4 +201,14 @@ color: var(--cor-secundaria);
 hr{
   height: 1px;
   background-color: #1D3557;
+}
+
+footer{
+  position: fixed;
+  bottom: 0;
+  background-color: var(--cor-destaque);
+  width: 100vw;
+text-align: center;
+color: var(--cor-secundaria);
+  padding: 2% 0; 
 }
