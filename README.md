@@ -28,6 +28,8 @@
   ![image](https://github.com/MuriloRobem22/Lista-de-compras/assets/91226380/3bb035ff-7d9d-47d8-bdf5-8bc4cafb337e)
 
   Caso hajá a necessidade de apagar algum item da lista, existe a função de apagar que é bem intuitiva, o usuario precisará apenas escrever o nome do item(não é necessario escrever a quantidade do item, apenas o nome já serve), e clickar no botão "apagar item", e automaticamente a tabela sera atualizada e o item descrito sera apagado.
+
+  ###Este projeto é responsivo portanto foi desenvolvido para telas mobile e desktops.
    
 ## Uppdates futuros:
 
