@@ -42,7 +42,7 @@ body{
   align-content: space-around;
   /* align-items: center; */
   transition: all .3s ease-in-out;
-
+  scrollbar-color: blue red
 }
 
 
@@ -51,7 +51,7 @@ body{
   padding: 2em 0;
   overflow-x: scroll;
   transition: all .3s ease-in-out;
-  scrollbar-color: blue red
+
 }
 
 section{
