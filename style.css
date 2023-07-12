@@ -20,6 +20,29 @@
   --2cor-divider: hsla(var(--hue), 98%, 56%, 0);
 }
 
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-button{
+  cursor: pointer;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 5px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 5px var(--hover);
+  background: var(--cor-destaque); 
+  border-radius: 0.66rem;
+}
+
 body{
   width: 100vw;
   box-sizing: border-box;
@@ -42,13 +65,12 @@ body{
   align-content: space-around;
   /* align-items: center; */
   transition: all .3s ease-in-out;
-  scrollbar-color: blue red
 }
 
 
 
 .compraAdd{
-  padding: 2em 0;
+  padding: 2em 1em;
   overflow-x: scroll;
   transition: all .3s ease-in-out;
 
@@ -263,4 +285,4 @@ footer{
 margin-top: -1.5%;
 }
 
-}
+}s
