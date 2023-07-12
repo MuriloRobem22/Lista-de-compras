@@ -30,7 +30,11 @@
   Caso hajá a necessidade de apagar algum item da lista, existe a função de apagar que é bem intuitiva, o usuario precisará apenas escrever o nome do item(não é necessario escrever a quantidade do item, apenas o nome já serve), e clickar no botão "apagar item", e automaticamente a tabela sera atualizada e o item descrito sera apagado.
 
   ###Este projeto é responsivo portanto foi desenvolvido para telas mobile e desktops.
-   
+
+  <div>
+     <img src="https://github.com/MuriloRobem22/Lista-de-compras/assets/91226380/a0a2b619-6268-4188-9416-58e7f81c4aad"  height="400"/>
+
+   </div>
 ## Uppdates futuros:
 
 Futuramente desejo integrar ao site a função de transformar em PDF a tabela dos itens de compra.
