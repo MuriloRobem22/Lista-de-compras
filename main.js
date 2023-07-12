@@ -105,7 +105,7 @@ function tabela() {
   
   <td> ${congelados.join('<br><hr>')} </td>
 
-  <td> ${produtos.join('<br><br><hr>')} </td>
+  <td> ${produtos.join('<br><hr>')} </td>
   </tr>
   
   
